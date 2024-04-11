@@ -2,7 +2,7 @@
 
 Welcome to the **Namada Shielded App**, a secure and efficient application built with ElectronJS designed to enhance your digital experience. Our application is tailored to provide users with advanced features in a shielded environment, ensuring your activities remain private and secure.
 
-![Namada Shielded App System](https://ibb.co/tQLN9QR "Namada Shielded App System")
+![Namada Shielded App System](https://ibb.co/tQLN9QR)
 
 ## Getting Started
 
