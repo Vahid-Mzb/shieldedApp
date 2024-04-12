@@ -1,6 +1,6 @@
 # Namada Shielded App
 
-Welcome to the **Namada Shielded App**, a secure and efficient application built with ElectronJS designed to enhance your digital experience. Our application is tailored to provide users with advanced features in a shielded environment, ensuring your activities remain private and secure.
+I've developed an application that allows for effortless shielded swaps. With this app, users can create wallets, transfer OSMO from Namada to Osmosis, exchange it for USDC, and then transfer it back to a shielded account in Namada. This app simplifies transactions and swapping and the need for users to interact with the CLI directly. The swapping functionality is powered by OsmoJS.This app, currently built with ElectronJS, has been tested on Linux machines but can also be developed for other platforms. 
 
 [Namada Shielded App System](https://ibb.co/tQLN9QR)
 
