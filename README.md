@@ -19,6 +19,76 @@ unzip namada.zip
 sudo dpkg -i electron-namada-gui_1.0.0_amd64.deb
 ```
 
+### Running Code Locally
+
+To run code locally, follow these steps using the terminal:
+
+1. Install the dependencies in each of the required directories by executing the following command in each directory:
+
+   ```bash
+   npm install
+   ```
+
+   Directories:
+   - Main directory
+   - `front-namada`
+   - `/scripts/swapnew`
+   - `/scripts/swapibc`
+   - `/scripts/wallets`
+
+2. Navigate to the `front-namada` directory, and build the user interface (UI) of the application by running:
+
+   ```bash
+   npm run build
+   ```
+
+   This command compiles the UI of the application.
+
+3. Finally, in the main directory, start the application with the following command:
+
+   ```bash
+   npm start
+   ```
+
+   This will open a window where you can view the application locally.
+
+   
+### Modifying the UI or Backend
+
+To make changes to the UI or Backend and see the changes live, follow these steps:
+
+1. Open the `main.js` file located in the main directory.
+2. Find and comment out the following lines (written in JavaScript):
+
+   ```javascript
+   const appUrl = `file://${path.join(__dirname, "./front-namada/build/index.html")}`;
+   mainWindow.loadURL(appUrl);
+   ```
+
+3. Uncomment the following lines to enable live reloading and open developer tools:
+
+   ```javascript
+   // mainWindow.loadURL("http://localhost:3000");
+   // mainWindow.webContents.openDevTools();
+   ```
+
+Now, you can modify the UI and observe the results live.
+
+
+### Building the Application for Other Platforms
+
+To build the application for other platforms, you can modify the `package.json` file in the main directory according to the format that Electron Forge requires. For more details, you can refer to the [Electron Forge documentation](https://www.electronforge.io/).
+
+However, if you want to build the application specifically for Linux, execute the following command in the terminal in main directory:
+
+```bash
+npm run make
+```
+
+This command will build the application for Linux.
+
+
+
 ## Introduction
 
 This application is designed to simplify the use of command-line interfaces (CLI) in the Namada space, making it more accessible for everyday users. It provides a graphical user interface (GUI) wrapper for interacting seamlessly with the Namada blockchain. Additionally, it supports shielded swaps on the Osmosis blockchain.
