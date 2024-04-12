@@ -1,0 +1,75 @@
+{
+  "name": "electron-namada-gui",
+  "productName": "namadaGUI",
+  "version": "1.0.0",
+  "description": "An Electron application with additional libraries.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "dev:watch": "npx electronmon --trace-warnings .",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "@cosmjs/amino": "^0.32.3",
+    "@cosmjs/crypto": "^0.32.3",
+    "@cosmjs/proto-signing": "^0.32.3",
+    "@cosmjs/stargate": "^0.32.3",
+    "dotenv": "^16.4.5",
+    "electron-squirrel-startup": "^1.0.0",
+    "long": "^5.2.3",
+    "osmojs": "^16.10.0",
+    "resize-img": "^1.1.2",
+    "toastify-js": "^1.12.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.3.1",
+    "@electron-forge/maker-deb": "^7.3.1",
+    "@electron-forge/maker-rpm": "^7.3.1",
+    "@electron-forge/maker-squirrel": "^7.3.1",
+    "@electron-forge/maker-zip": "^7.3.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.3.1",
+    "@electron-forge/plugin-fuses": "^7.3.1",
+    "electron": "^29.1.6",
+    "electronmon": "^1.0.0"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "executableName": "electron-namada-gui"
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "electron_namada_gui"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {
+            "arch": "x64",
+            "options": {
+              "maintainer": "Your Name",
+              "homepage": "http://yourapphomepage.com",
+              "bin": "electron-namada-gui",
+              "categories": [
+                "Utility"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}
