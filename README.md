@@ -17,10 +17,7 @@ After downloading, unzip the file and install the app using the following comman
 ```bash
 unzip namada.zip
 sudo dpkg -i electron-namada-gui_1.0.0_amd64.deb
-
-
-
-
+```
 
 ## Introduction
 
@@ -102,4 +99,7 @@ Below is an image showing the Shielded Actions Menu:
 ![Shielded Actions](/images/shielded-actions.jpg)
 
 This menu provides all the tools necessary for secure transactions across Osmois and Namada, streamlining the process of swapping and shielding your assets.
+
+```
+
 ```
