@@ -6,6 +6,14 @@
 
 ## Getting Started
 
+## Step-by-Step Video Guide for Using the App
+
+I have created a video guide that walks you through how to use the app step by step. The video is hosted on YouTube. You can watch it by following this link:
+
+[Watch the video guide on YouTube](https://youtu.be/2ssZ01-6xzo)
+
+I encourage you to watch this guide to enhance your understanding and ease of use of the application.
+
 ### Download and Install the .deb File
 
 To download the .deb file for the Namada Shielded App, follow the link below:
