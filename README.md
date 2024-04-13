@@ -148,13 +148,11 @@ These features enhance the flexibility and security of managing your shielded ac
 
 ## #IBC Transfer from Namada Menu
 
-### Step 3: Performing a Shielded Transfer
+### Step 3: Performing an IBC Transfer
 
-Performing a shielded transfer using this app is a streamlined process. This functionality is part of the IBC (Inter-Blockchain Communication) transfer capabilities in the Namada menu. Here’s how you can use it:
+Performing IBC transfer using this app is a streamlined process. This functionality is part of the IBC  transfer capabilities in the Namada menu. Here’s how you can use it:
 
-1. **From Namada to Osmosis**: Easily transfer your OSMO from your Namada wallet to the Osmosis blockchain. This is particularly useful for shielded swapping purposes.
-2. **Shielded Swapping**: After transferring your OSMO tokens to Osmosis, navigate to the Shielded Actions menu to perform a swap.
-3. **Return to Namada**: Finally, transfer the swapped assets back to a shielded account on Namada.
+1. **From Namada to Osmosis**: Easily transfer your token from your Namada wallet to the Osmosis blockchain. This is particularly useful for shielded swapping purpose.
 
 Below is an image showing the menu where these actions are performed:
 
